@@ -1,0 +1,104 @@
+.intro h1{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.intro span::before{
+    content: 'designing';
+    color: '#F95733';
+    background-color: '#F95733';
+    animation: animateText infinite 5s ease-in-out;
+}
+
+.intro_our_services{
+        width: 60%;
+}
+
+.intro_our_services span{
+    font-size: 46px;
+      font-weight: 700;
+      line-height: 55px;
+      color: #2B2D30;
+}
+
+.border_btm{
+  height: 10px;
+    width: 7%;
+    border-top: 5px solid #F95733;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: border-color 0.6s ease-in-out;
+}
+
+.intro_our_services:hover{
+    cursor: pointer;
+}
+
+.intro:hover{
+    cursor: pointer;
+}
+
+.intro:hover .border_btm{
+    width: 90%;
+    transition: width 0.6s ease-in-out;
+}
+
+.intro_our_services:hover .border_btm{
+    width: 90%;
+    transition: width 0.6s ease-in-out;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .intro_our_services{
+        width: 90%;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .intro h1{
+        font-size: 36px;
+        line-height: 45px;
+    }
+    .intro_our_services span{
+        font-size: 36px;
+        line-height: 45px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .intro h1{
+        font-size: 28px;
+        line-height: 35px;
+    }
+    .intro_our_services{
+        width: 100%;
+    }
+    .intro_our_services span{
+        font-size: 28px;
+        line-height: 35px;
+    }
+    
+}
+
+@keyframes animateText {
+  
+    0% {
+        content: "designing";
+        color: '#F95733';
+    }
+    
+    50% {
+        color: '#F95733';
+        content: "growing";
+    }
+    
+    75% {
+        content: "building";
+        color: '#F95733';
+    }
+}
+
